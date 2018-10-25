@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="icon" href="../images/logo.png">
 	<title>Home</title>
 
 	
@@ -17,6 +17,37 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<style>
+ 
+.navbar-collapse.collapse.in 
+{
+	display: block ! important;
+}
+
+
+#desktop{
+
+	display: block!important;
+}
+#mobile{
+	display: none!important;
+}
+
+@media screen and (max-width: 768px){
+
+#desktop{
+
+	display: none!important;
+}
+#mobile{
+	display: block!important;
+}
+}
+
+
+</style>
+
 
 </head>
 -->
@@ -53,6 +84,7 @@
 </div>
 -->	
 
+<div id="desktop">	
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark " style="margin-bottom: 5% ;color: #eeeeee!important;" id="navbar">
   <!-- Brand/logo -->
   <a class="navbar-brand" href="home.html">
@@ -74,7 +106,23 @@
 </ul>
 </div>
 </nav>
+	</div>
+	
+<div id="mobile">
 
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark my-2 my-md-0 mr-md-3" style="margin-bottom: 5% ;" id="navbar">
+          <a class="navbar-brand" href="home.html">
+    <img src="../images/logo_inv.png" alt="Fractal" style="width: 40px;">  Fractal
+  </a>
+      <div class="ml-auto">
+        <a class="p-2 text-light" href="login.html">Login<i class="fa fa-user"></i></a>
+        <a class="p-2 text-light" href="register.html">Register<i class="fa fa-user-plus"></i></a>
+      </div>
+      </nav>
+
+</div>
+	
+	
 <div class="container">
 <div class="card-deck" style="margin-bottom: 10px">
   <div class="card" id="card">
